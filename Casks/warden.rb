@@ -1,6 +1,6 @@
 cask "warden" do
-  version "0.2.1"
-  sha256 "6314a8f9a1ab38eca2da99fd1bb83e4aa829d738ac5df49e70d1f995633f6a5f"
+  version "0.2.2"
+  sha256 "77dc09db587ef401f43934c7ee4f55bc6eb97826084dfd77712286215b5c51e8"
 
   url "https://github.com/magicorntech/homebrew-warden/releases/download/v#{version}/Warden-#{version}.zip"
   name "Warden"
