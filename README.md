@@ -1,12 +1,12 @@
 # homebrew-warden
 
-Homebrew tap for the `warden` command-line client (macOS and Linux).
+Homebrew tap for Warden's clients (macOS and Linux).
 
 ```sh
 brew tap magicorntech/warden
-brew install warden
-warden version
+brew install warden-cli          # the command-line client (binary: warden), macOS and Linux
+brew install --cask warden       # the macOS app (Apple Silicon)
 ```
 
-This repository holds only the formula (`Formula/warden.rb`) and, as GitHub Releases, the built binaries it downloads.
-Releases are cut by Magicorn; do not edit `Formula/warden.rb` by hand.
+This repository holds only the formula (`Formula/warden-cli.rb`), the cask (`Casks/warden.rb`) and, as GitHub Releases, the built
+binaries they download. Releases are cut automatically from Magicorn's build pipeline on a version tag; do not edit the formula or cask by hand.
