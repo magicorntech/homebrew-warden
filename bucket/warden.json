@@ -1,4 +1,4 @@
-﻿{
+{
     "version":  "0.2.2",
     "description":  "Warden: identity-native infrastructure access. The tray app and the warden command-line client.",
     "homepage":  "https://github.com/magicorntech/homebrew-warden",
