@@ -7,6 +7,13 @@ brew install magicorntech/warden/warden-cli          # the command-line client (
 brew install --cask magicorntech/warden/warden       # the macOS app (Apple Silicon)
 ```
 
+On Windows (PowerShell):
+
+```powershell
+scoop bucket add magicorn https://github.com/magicorntech/homebrew-warden
+scoop install warden
+```
+
 Use the full names above: Homebrew only trusts its own taps by default, and installing a fully qualified name trusts just that one item.
 (`brew tap magicorntech/warden` and then `brew install warden-cli` works only after `brew trust --formula magicorntech/warden/warden-cli`.)
 
