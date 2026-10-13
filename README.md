@@ -4,6 +4,7 @@ Homebrew tap for Warden's clients (macOS and Linux).
 
 ```sh
 brew tap magicorntech/warden
+brew trust magicorntech/warden   # Homebrew 7 refuses third-party taps (casks in particular) until you trust them
 brew install warden-cli          # the command-line client (binary: warden), macOS and Linux
 brew install --cask warden       # the macOS app (Apple Silicon)
 ```
