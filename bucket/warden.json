@@ -1,12 +1,12 @@
 {
-    "version":  "0.2.2",
+    "version":  "0.2.3",
     "description":  "Warden: identity-native infrastructure access. The tray app and the warden command-line client.",
     "homepage":  "https://github.com/magicorntech/homebrew-warden",
     "license":  "Proprietary",
     "architecture":  {
                          "64bit":  {
-                                       "hash":  "82daf443362731a89bd6d84cfcc0e9e950346e7e073addb63791291fb34d8cf9",
-                                       "url":  "https://github.com/magicorntech/homebrew-warden/releases/download/v0.2.2/Warden-0.2.2-x64-portable.zip"
+                                       "hash":  "efc3713c3bf8d05db12572f713fd4a60ddb719e5d81e1917d70c3e8682301d63",
+                                       "url":  "https://github.com/magicorntech/homebrew-warden/releases/download/v0.2.3/Warden-0.2.3-x64-portable.zip"
                                    }
                      },
     "bin":  "warden.exe",
@@ -17,9 +17,12 @@
                       ]
                   ],
     "post_install":  [
+                         "Get-Process WardenApp -ErrorAction SilentlyContinue | Stop-Process -Force",
+                         "\u0026 \"$dir\\warden.exe\" daemon stop 2\u003e$null",
                          "\u0026 \"$dir\\warden.exe\" daemon install"
                      ],
     "pre_uninstall":  [
+                          "Get-Process WardenApp -ErrorAction SilentlyContinue | Stop-Process -Force",
                           "\u0026 \"$dir\\warden.exe\" daemon uninstall"
                       ],
     "notes":  "Sign in with: warden login --cluster \u003cname\u003e --addr \u003cyour Warden login address\u003e"
