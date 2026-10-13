@@ -7,6 +7,9 @@ brew install magicorntech/warden/warden-cli          # the command-line client (
 brew install --cask magicorntech/warden/warden       # the macOS app (Apple Silicon)
 ```
 
+No Homebrew? Each release also has a macOS disk image for Apple Silicon and Intel (drag Warden to Applications) and a Windows installer (`.msi`):
+https://github.com/magicorntech/homebrew-warden/releases/latest
+
 On Windows (PowerShell):
 
 ```powershell
