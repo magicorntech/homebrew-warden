@@ -4,23 +4,23 @@ class WardenCli < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/magicorntech/homebrew-warden/releases/download/v0.2.0/warden-0.2.0-darwin-arm64.tar.gz"
-      sha256 "fbbf32f8ae11f32b304ad8aa0e578080543b70a033324d37e90349d9bd1eab59"
+      url "https://github.com/magicorntech/homebrew-warden/releases/download/v0.2.1/warden-0.2.1-darwin-arm64.tar.gz"
+      sha256 "3b03549caae6a7ee4534b315b375fe80bc62f2dd947707af7b8f2b22ae7350c2"
     end
     on_intel do
-      url "https://github.com/magicorntech/homebrew-warden/releases/download/v0.2.0/warden-0.2.0-darwin-amd64.tar.gz"
-      sha256 "2bf09e81c8374d29ae5df733891a3da5b79fe51fee1029711e1ae345b7bacc8b"
+      url "https://github.com/magicorntech/homebrew-warden/releases/download/v0.2.1/warden-0.2.1-darwin-amd64.tar.gz"
+      sha256 "065a22add00d1eb35bcd5905557182ecf8566703bad2f14255bdc5045b051856"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/magicorntech/homebrew-warden/releases/download/v0.2.0/warden-0.2.0-linux-arm64.tar.gz"
-      sha256 "e94b8999947a66d75a737f6c2a40dac7ecfeba02f1db3a7b54be4ebd401a5fb3"
+      url "https://github.com/magicorntech/homebrew-warden/releases/download/v0.2.1/warden-0.2.1-linux-arm64.tar.gz"
+      sha256 "78f6071ddc0b0cc0c6a46497f9942278574bde55b7a9df57df5a3861c75dfb20"
     end
     on_intel do
-      url "https://github.com/magicorntech/homebrew-warden/releases/download/v0.2.0/warden-0.2.0-linux-amd64.tar.gz"
-      sha256 "cac0d00454097611e7ec93010971faf9034bb82386cb2ec5592ab5cd31bf9d48"
+      url "https://github.com/magicorntech/homebrew-warden/releases/download/v0.2.1/warden-0.2.1-linux-amd64.tar.gz"
+      sha256 "43969c4776dd5e6ff55420cb03715bb36bd9661fb003d1a8778ca3b2e95195f2"
     end
   end
 
