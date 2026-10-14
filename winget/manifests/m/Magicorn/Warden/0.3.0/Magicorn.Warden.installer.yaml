@@ -1,0 +1,16 @@
+PackageIdentifier: Magicorn.Warden
+PackageVersion: 0.3.0
+InstallerLocale: en-US
+InstallerType: wix
+Scope: user
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/magicorntech/homebrew-warden/releases/download/v0.3.0/Warden-0.3.0-x64.msi
+  InstallerSha256: 83CE5568E978CA26C1576FAF46A202E0AAF3F43B8E645DB0138F15D26FB1AD09
+  ProductCode: '{CBB1C3F2-4B2C-4B00-8C08-FCFBDD9DBAEC}'
+ManifestType: installer
+ManifestVersion: 1.6.0
