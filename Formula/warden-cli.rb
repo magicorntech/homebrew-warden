@@ -4,23 +4,23 @@ class WardenCli < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/magicorntech/homebrew-warden/releases/download/v0.2.5/warden-0.2.5-darwin-arm64.tar.gz"
-      sha256 "a43f91cb83e9317a2d49f5fea624064ab300af68e646b64407e9e730dba82eef"
+      url "https://github.com/magicorntech/homebrew-warden/releases/download/v0.2.6/warden-0.2.6-darwin-arm64.tar.gz"
+      sha256 "444e816f15fd6b3e559a3b0779e46fb3341682468f14e15bdf546dec1a043198"
     end
     on_intel do
-      url "https://github.com/magicorntech/homebrew-warden/releases/download/v0.2.5/warden-0.2.5-darwin-amd64.tar.gz"
-      sha256 "27b6fb1d59dd00ed9289c00ca6fd5525851e5b72f565851b11e84c2b1850de3a"
+      url "https://github.com/magicorntech/homebrew-warden/releases/download/v0.2.6/warden-0.2.6-darwin-amd64.tar.gz"
+      sha256 "9afb41781eaa41dcaef4940b636dc1395f2783318a01240b910994473ed315ef"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/magicorntech/homebrew-warden/releases/download/v0.2.5/warden-0.2.5-linux-arm64.tar.gz"
-      sha256 "7789783f02f317f7d3c192493b02c19d56d87e5365d07ea4194fa2b299222faa"
+      url "https://github.com/magicorntech/homebrew-warden/releases/download/v0.2.6/warden-0.2.6-linux-arm64.tar.gz"
+      sha256 "b96fed5c05b3f3540a30c08902724a55f6ca6645b4821fc167f2db9d7d611ea1"
     end
     on_intel do
-      url "https://github.com/magicorntech/homebrew-warden/releases/download/v0.2.5/warden-0.2.5-linux-amd64.tar.gz"
-      sha256 "69875b280d2a7028673992fd15a2bf53836de90d4ab6003190e1ed665d5675fd"
+      url "https://github.com/magicorntech/homebrew-warden/releases/download/v0.2.6/warden-0.2.6-linux-amd64.tar.gz"
+      sha256 "8bf7ac5e7fd1668387988b2f8d3a5a7f716f904b28e50a0260e2bd7213b9d865"
     end
   end
 
@@ -44,7 +44,7 @@ class WardenCli < Formula
       Start the daemon (one for every cluster, kept running in the background):
         brew services start warden-cli
       Then sign in; the daemon picks the cluster up by itself:
-        warden login --cluster <name> --addr <your Warden login address>
+        warden login <your Warden address, e.g. warden.example.com>
       Before removing the package, stop the service (brew does not do it for you):
         brew services stop warden-cli
       On macOS, use the Warden app instead (brew install --cask magicorntech/warden/warden): pairing this Mac's Secure Enclave key
