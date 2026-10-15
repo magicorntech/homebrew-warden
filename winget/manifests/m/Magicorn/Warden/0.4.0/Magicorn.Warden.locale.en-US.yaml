@@ -1,0 +1,10 @@
+PackageIdentifier: Magicorn.Warden
+PackageVersion: 0.4.0
+PackageLocale: en-US
+Publisher: Magicorn
+PackageName: Warden
+License: Proprietary
+ShortDescription: Identity-native infrastructure access: short-lived certificates, no standing keys.
+PackageUrl: https://github.com/magicorntech/homebrew-warden
+ManifestType: defaultLocale
+ManifestVersion: 1.6.0
