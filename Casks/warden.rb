@@ -1,9 +1,9 @@
 cask "warden" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "0.5.7"
-  sha256 arm:   "07de574d7002b0aed692888df7165b16dbf702992ab270fce6cf990c972146a8",
-         intel: "a7dbd55cfcc4d66e67f673a94c51d97c5f79b02d7d3c8cf4787f6e812ee6ea86"
+  version "0.6.0"
+  sha256 arm:   "22a212c30fd260117d3e80b635f59cc1366199fc94d526844e584278ffa79262",
+         intel: "600072e71ba57107419b5a8c0491fa47512ff4c042a8fef51ec981300b88b8ff"
 
   url "https://github.com/magicorntech/homebrew-warden/releases/download/v#{version}/Warden-#{version}-#{arch}.zip"
   name "Warden"
