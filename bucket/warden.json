@@ -1,12 +1,12 @@
 {
-    "version":  "0.9.3",
+    "version":  "0.10.0",
     "description":  "Warden: identity-native infrastructure access. The tray app and the warden command-line client.",
     "homepage":  "https://github.com/magicorntech/homebrew-warden",
     "license":  "Proprietary",
     "architecture":  {
                          "64bit":  {
-                                       "hash":  "9c5df9c47e4c6fae0933f0b410d206aa248b37a1f394e798d097fb3542b776ca",
-                                       "url":  "https://github.com/magicorntech/homebrew-warden/releases/download/v0.9.3/Warden-0.9.3-x64-portable.zip"
+                                       "hash":  "e199a6d72d2ac4a4e11f1c35ed7e3ec7647de3155d8011ae46c69ac2bc1d92bd",
+                                       "url":  "https://github.com/magicorntech/homebrew-warden/releases/download/v0.10.0/Warden-0.10.0-x64-portable.zip"
                                    }
                      },
     "bin":  "warden.exe",
