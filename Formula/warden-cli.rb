@@ -2,6 +2,10 @@ class WardenCli < Formula
   desc "Identity-native infrastructure access: short-lived certificates only"
   homepage "https://github.com/magicorntech/homebrew-warden"
 
+  # The standalone command-line package is discontinued: the warden command comes with the Warden app (the cask), which is
+  # the only build that can reach this Mac's Secure Enclave. Linux is not a client platform.
+  disable! date: "2026-11-12", because: "is discontinued: the warden command now comes with the Warden app", replacement_cask: "magicorntech/warden/warden"
+
   on_macos do
     on_arm do
       url "https://github.com/magicorntech/homebrew-warden/releases/download/v0.9.3/warden-0.9.3-darwin-arm64.tar.gz"

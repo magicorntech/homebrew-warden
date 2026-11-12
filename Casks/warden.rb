@@ -1,9 +1,9 @@
 cask "warden" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "0.9.3"
-  sha256 arm:   "c0a546051390def0fb9e6c62574a0b44b8c27a580d77e91ae09e68e567caf758",
-         intel: "99d7d760186c2643fbd0d34539275826b93bc68988947f79f80bdc627a1af102"
+  version "0.10.0"
+  sha256 arm:   "2b8bef574d1fe3415431aba69a966cf078254b4caa1761f3a7fd89230ad26f6a",
+         intel: "1f84f999555c33e9a20f1e7075c015a9ff2db16af80a74034229d5f84711b6e0"
 
   url "https://github.com/magicorntech/homebrew-warden/releases/download/v#{version}/Warden-#{version}-#{arch}.zip"
   name "Warden"
@@ -14,6 +14,15 @@ cask "warden" do
 
   # Installed as Warden.app, the same name the disk image uses, so an app installed either way is the same app in the same place.
   app "WardenApp.app", target: "Warden.app"
+
+  # The warden command IS the app's daemon binary: one file, one version, and the only executable on a Mac that can reach the Secure
+  # Enclave. There is no separate command-line package any more (the formula warden-cli is disabled). Homebrew skips this link when a
+  # formula's link is in the way, which would leave the retired command on the PATH, so that link is removed first.
+  preflight do
+    old = Pathname.new("#{HOMEBREW_PREFIX}/bin/warden")
+    old.delete if old.symlink? && old.readlink.to_s.include?("Cellar/warden-cli/")
+  end
+  binary "#{appdir}/Warden.app/Contents/Library/WardenDaemon.app/Contents/MacOS/warden"
 
   # The daemon is the app's own (WardenDaemon.app inside the bundle: only that executable can reach the Secure Enclave), registered as a
   # LaunchAgent so it runs at every login whether or not the app is open. Installing it is 'warden daemon install', run as the user.
